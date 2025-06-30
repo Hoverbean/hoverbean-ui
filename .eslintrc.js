@@ -9,6 +9,8 @@ module.exports = {
   plugins: ['react-hooks'],
   rules: {
     // 'prettier/prettier': 0,
+    // Allow css prop for styled-components
+    'react/no-unknown-property': ['error', { ignore: ['css'] }],
   },
   overrides: [
     // typescript
@@ -29,6 +31,8 @@ module.exports = {
         '@typescript-eslint/explicit-module-boundary-types': 0,
         'react/prop-types': 0,
         'react/display-name': 0,
+        // Allow css prop for styled-components in TypeScript files too
+        'react/no-unknown-property': ['error', { ignore: ['css'] }],
       },
     },
 
@@ -45,6 +49,8 @@ module.exports = {
         'react/jsx-handler-names': 0,
         'linebreak-style': ['error', 'unix'],
         'react/display-name': 0,
+        // Allow css prop for styled-components in JavaScript files too
+        'react/no-unknown-property': ['error', { ignore: ['css'] }],
       },
     },
 

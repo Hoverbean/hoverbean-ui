@@ -35,8 +35,18 @@ const updateWebpackModuleRules = (config) => {
   return config
 }
 
+// Function to disable ForkTsCheckerWebpackPlugin due to IPC compatibility issues
+const disableForkTsCheckerPlugin = () => (config) => {
+  // Filter out the ForkTsCheckerWebpackPlugin
+  config.plugins = config.plugins.filter(plugin => {
+    return !(plugin.constructor.name === 'ForkTsCheckerWebpackPlugin')
+  })
+  return config
+}
+
 module.exports = override(
   updateWebpackModuleRules,
+  disableForkTsCheckerPlugin(), // Disable the problematic plugin
   useBabelRc(),
   addWebpackAlias({
     'bn.js': 'fork-bn.js',
@@ -71,6 +81,7 @@ module.exports = override(
       stream: require.resolve('stream-browserify'),
       timers: require.resolve('timers-browserify'),
       os: require.resolve('os-browserify/browser'),
+      zlib: require.resolve('browserify-zlib'),
     },
   })
 )
