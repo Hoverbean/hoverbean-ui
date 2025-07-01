@@ -221,7 +221,7 @@ export function BoxProgress({
                   color: ${theme.surfaceContentSecondary};
                 `}
               >
-                Launching your Garden
+                Launching your HighTable
               </div>
             </div>
           )}

@@ -431,11 +431,11 @@ function RequestedAmount({
               >
                 <Help hint="">
                   For funding proposals denominated in {stableToken.symbol} to
-                  be made successfully, this Garden&apos;s{' '}
+                  be made successfully, this HighTable&apos;s{' '}
                   <Link href="https://1hive.gitbook.io/gardens/garden-creators/price-oracle">
                     price oracle
                   </Link>{' '}
-                  must be called consistently. Contact your Garden administrator
+                  must be called consistently. Contact your HighTable administrator
                   or development team if the requested stable amount is not
                   accurate.
                 </Help>

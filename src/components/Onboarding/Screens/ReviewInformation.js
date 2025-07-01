@@ -75,7 +75,7 @@ function ReviewGardenType() {
       `}
     >
       <Field
-        label="Garden type"
+        label="HighTable type"
         value={
           config.garden.type === NATIVE_TYPE
             ? 'Native Token'
@@ -98,8 +98,8 @@ function ReviewGardenProfile() {
       `}
     >
       <div>
-        <Field label="Garden name" value={config.garden.name} />
-        <Field label="Garden description" value={config.garden.description} />
+        <Field label="HighTable name" value={config.garden.name} />
+        <Field label="HighTable description" value={config.garden.description} />
         <Field label="Forum" value={config.garden.forum} />
       </div>
       <LineBreak />
@@ -123,7 +123,7 @@ function ReviewGardenProfile() {
             value={config.garden.logo_type?.blob.name || 'No image'}
           />
           <Field
-            label="Garden logo"
+            label="HighTable logo"
             value={config.garden.logo?.blob.name || 'No image'}
           />
 

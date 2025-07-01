@@ -17,7 +17,7 @@ function DAONotFoundError({ chainId, daoId }) {
           text-align: center;
         `}
       >
-        Garden not found
+        HighTable not found
       </h1>
       <div
         css={`
@@ -27,7 +27,7 @@ function DAONotFoundError({ chainId, daoId }) {
           ${textStyle('body2')};
         `}
       >
-        It looks like there’s no garden associated with{' '}
+        It looks like there’s no HighTable associated with{' '}
         {<span css="font-weight: bold;">“{daoId}”</span>} on the{' '}
         {getNetworkName(chainId)} network
       </div>

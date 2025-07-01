@@ -63,7 +63,6 @@ function HeroBanner({ onRequestNewProposal }: HeroBannerProps) {
         css={`
           background: url(${banner.image}) no-repeat;
           background-size: cover;
-
           padding-top: ${banner.aspectRatio};
           position: relative;
           ${tabletMode && `min-height: ${28.25 * GU}px;`}

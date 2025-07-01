@@ -39,7 +39,7 @@ function DeploymentStepsPanel({ transactionsStatus, pending, allSuccess }) {
           color: ${theme.surfaceContentSecondary};
         `}
       >
-        Launching your Garden
+        Launching your HighTable
       </div>
 
       <div

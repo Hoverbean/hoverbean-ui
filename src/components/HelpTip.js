@@ -48,7 +48,7 @@ const KNOWN_HELP_DESCRIPTIONS = {
   'settlement-offer': [
     'Settlement Offer',
     <>
-      The <strong>Settlement Offer</strong> (denominated in your Garden&apos;s
+      The <strong>Settlement Offer</strong> (denominated in your HighTable&apos;s
       token) is the amount of tokens you stand to receive from the proposal
       author, if he or she chooses to withdraw their proposal before it is
       raised to Celeste.

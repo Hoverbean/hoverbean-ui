@@ -211,8 +211,8 @@ function TokenSettingsNative() {
     >
       <div>
         <Header
-          title="Garden Tokenomics"
-          subtitle="Garden token"
+          title="HighTable Tokenomics"
+          subtitle="HighTable token"
           thirdtitle="Choose the settings of your token"
         />
 

@@ -85,11 +85,11 @@ function ProposalInfo({
                   <Help hint="">
                     Converted to {requestToken.symbol} at time of execution. For
                     funding proposals denominated in {stableToken.symbol} to be
-                    made successfully, this Garden&apos;s{' '}
+                    made successfully, this HighTable&apos;s{' '}
                     <Link href="https://1hive.gitbook.io/gardens/garden-creators/price-oracle">
                       price oracle
                     </Link>{' '}
-                    must be called consistently. Contact your Garden
+                    must be called consistently. Contact your HighTable
                     administrator or development team if the proposal execution
                     transaction is continually failing or if the request stable
                     amount is not accurate.

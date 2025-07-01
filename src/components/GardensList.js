@@ -71,7 +71,7 @@ function GardensList({ gardens }) {
           )}
         </div>
       ) : (
-        <EmptyResults title="No gardens found" />
+        <EmptyResults title="No HighTables found" />
       )}
     </div>
   )

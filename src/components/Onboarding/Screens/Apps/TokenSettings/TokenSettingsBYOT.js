@@ -147,7 +147,7 @@ function TokenSettingsBYOT() {
       tokenData.symbol &&
       !loadingTokenData
     ) {
-      setGardenTokenName(`Garden ${tokenData.name}`)
+      setGardenTokenName(`HighTable ${tokenData.name}`)
       setGardenTokenSymbol(`g${tokenData.symbol}`)
     } else {
       setGardenTokenName('')
@@ -163,8 +163,8 @@ function TokenSettingsBYOT() {
     >
       <div>
         <Header
-          title="Garden Tokenomics"
-          subtitle="Garden token"
+          title="HighTable Tokenomics"
+          subtitle="HighTable token"
           thirdtitle="Choose the settings of your token"
         />
         <div
@@ -226,10 +226,10 @@ function TokenSettingsBYOT() {
           <Field
             label={
               <React.Fragment>
-                Garden Token Name
+                HighTable Token Name
                 <Help hint="What is Token Name?">
-                  <strong>Garden Token Name</strong> is the name you can assign
-                  to the token that will be minted when creating this garden.
+                  <strong>HighTable Token Name</strong> is the name you can assign
+                  to the token that will be minted when creating this HighTable.
                 </Help>
               </React.Fragment>
             }
@@ -238,7 +238,7 @@ function TokenSettingsBYOT() {
               <TextInput
                 id={id}
                 onChange={handleTokenNameChange}
-                placeholder="Garden Token Name"
+                placeholder="HighTable Token Name"
                 value={gardenTokenName}
                 disabled={!gardenTokenName}
                 wide
@@ -248,9 +248,9 @@ function TokenSettingsBYOT() {
           <Field
             label={
               <React.Fragment>
-                Garden Token Symbol
+                HighTable Token Symbol
                 <Help hint="What is Token Symbol?">
-                  <strong>Garden Token Symbol</strong> or ticker is a shortened
+                  <strong>HighTable Token Symbol</strong> or ticker is a shortened
                   name (typically in capital letters) that refers to a token on
                   a trading platform. For example: HNY.
                 </Help>
@@ -311,7 +311,7 @@ function TokenSettingsBYOT() {
         >
           The address you provided does not match with a token contract.
         </Info>
-      )}
+      )}  
 
       <Info
         css={`

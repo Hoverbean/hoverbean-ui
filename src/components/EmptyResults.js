@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, GU, textStyle, useTheme, useLayout } from '@1hive/1hive-ui'
-import defaultGardenLogo from '@assets/defaultGardenLogo.png'
+import defaultGardenLogo from '@assets/bean.svg'
 
 export default function EmptyResults({
   image = defaultGardenLogo,

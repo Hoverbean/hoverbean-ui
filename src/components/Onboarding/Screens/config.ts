@@ -15,7 +15,7 @@ const STEPS = [
   'Configure tokenomics',
   'Configure governance',
   'Review information',
-  'Launch garden',
+  'Launch HighTable',
 ]
 
 export const Screens = [
@@ -24,8 +24,8 @@ export const Screens = [
     title: 'Type selection',
     Screen: GardenTypeSelector,
   },
-  { parent: STEPS[1], title: 'Garden metadata', Screen: GardenMetadata },
-  { parent: STEPS[2], title: 'Garden token', Screen: TokenSettings },
+  { parent: STEPS[1], title: 'HighTable metadata', Screen: GardenMetadata },
+  { parent: STEPS[2], title: 'HighTable token', Screen: TokenSettings },
   {
     parent: STEPS[2],
     title: 'Honeyswap liquidity',
@@ -56,5 +56,5 @@ export const Screens = [
     title: 'Review information',
     Screen: ReviewInformation,
   },
-  { parent: STEPS[5], title: 'Launch garden', Screen: LaunchGarden },
+  { parent: STEPS[5], title: 'Launch HighTable', Screen: LaunchGarden },
 ]

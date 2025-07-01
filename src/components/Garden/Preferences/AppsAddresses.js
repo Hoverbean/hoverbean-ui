@@ -30,7 +30,7 @@ function AppsAddresses() {
   return (
     <div>
       <React.Fragment>
-        <Box heading="Garden address">
+        <Box heading="HighTable address">
           {loadingGardens ? (
             <div
               css={`

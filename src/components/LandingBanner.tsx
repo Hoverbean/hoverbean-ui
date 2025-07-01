@@ -75,7 +75,7 @@ const Title = styled.h1<{
 }>`
   font-size: ${(props) => props.hFontSize};
   font-weight: bold;
-  color: ${(props) => (props.apparence === 'dark' ? '#8de995' : '#048333')}; ;
+  color: ${(props) => (props.apparence === 'dark' ? '#ac7e5d' : '#ac7e5d')}; ;
 `
 
 const Subtitle = styled.p<{
@@ -112,11 +112,11 @@ const LandingBanner = React.forwardRef<any, PropsType>((props, ref) => {
             }}
           >
             <div style={{ marginBottom: '7%', marginTop: '10%' }}>
-              <Title apparence={AppTheme.appearance} hFontSize={hFontSize}>
-                Find your garden
+              <Title apparence={AppTheme.appearance} color={'#ffffff'} hFontSize={hFontSize}>
+                Find your HighTable
               </Title>
               <Subtitle pFontSize={pFontSize} color={theme.contentSecondary}>
-                Gardens are digital economies that anyone can help shape
+                HighTable is a digital community that anyone can help shape
               </Subtitle>
             </div>
             <div
@@ -127,19 +127,9 @@ const LandingBanner = React.forwardRef<any, PropsType>((props, ref) => {
               }}
             >
               <Button
-                label="Documentation"
-                href="https://1hive.gitbook.io/gardens/"
-                target="_blank"
-                wide
-                css={`
-                  margin-right: ${2 * GU}px;
-                `}
-              />
-              <Button
-                label="Create a Garden"
+                label="Create a HighTable"
                 mode="strong"
                 onClick={onCreateGarden}
-                wide
               />
             </div>
           </div>

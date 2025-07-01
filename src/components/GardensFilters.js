@@ -57,7 +57,7 @@ const GardensFilters = ({
         <SearchInput
           value={nameFilter}
           onChange={onNameFilterChange}
-          placeholder="Search by Garden name"
+          placeholder="Search by HighTable name"
           wide
         />
       </FilterItem>

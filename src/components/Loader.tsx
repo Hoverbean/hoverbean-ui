@@ -6,7 +6,6 @@ import { getNetworkChainIdByType } from '@/networks'
 import { is1HiveGarden } from '@utils/garden-utils'
 
 import beeAnimation from '@assets/lotties/bee-animation.json'
-import gardensLoader from '@assets/lotties/gardens-loader.json'
 
 const Wrapper = styled.div`
   pointer-events: none;
@@ -41,12 +40,12 @@ function Loader() {
   return (
     <Wrapper>
       <Lottie
-        animationData={is1Hive ? beeAnimation : gardensLoader}
+        animationData={beeAnimation}
         play
         loop
         style={{
-          height: is1Hive ? 100 : 150,
-          width: is1Hive ? 100 : 150,
+          height: 400,
+          width: 400,
         }}
       />
     </Wrapper>

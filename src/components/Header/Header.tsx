@@ -1,7 +1,6 @@
 import React, { useCallback, useMemo } from 'react'
 import { useHistory, useLocation } from 'react-router'
 import {
-  Button,
   ButtonBase,
   GU,
   IconMenu,
@@ -9,6 +8,7 @@ import {
   useTheme,
   useViewport,
 } from '@1hive/1hive-ui'
+import Button from '@components/Button'
 import AccountModule from '../Account/AccountModule'
 import ActivityButton from '../Activity/ActivityButton'
 import BalanceModule from '../BalanceModule'
@@ -66,9 +66,8 @@ function Header({
   }, [connectedGarden, appearance])
 
   const Logo = <img src={logo} height={mobileMode ? 40 : 60} alt="" />
-  const logoLink = `#${
-    connectedGarden ? buildGardenPath(history.location, '') : '/home'
-  }`
+  const logoLink = `#${connectedGarden ? buildGardenPath(history.location, '') : '/home'
+    }`
 
   const toggleDarkMode = useCallback(() => {
     toggleAppearance()
@@ -189,8 +188,8 @@ function Header({
                 min-width: ${showBalance
                   ? 42.5 * GU
                   : mobileMode
-                  ? 10 * GU
-                  : 29 * GU}px;
+                    ? 10 * GU
+                    : 29 * GU}px;
               `}
             >
               <AccountModule compact={mobileMode} />
@@ -206,7 +205,7 @@ function Header({
                   <BalanceModule />
                 </>
               )}
-
+              {/* 
               {!connectedGarden && (
                 <ButtonBase
                   css={`
@@ -224,7 +223,7 @@ function Header({
                     }
                   />
                 </ButtonBase>
-              )}
+              )} */}
 
               {connectedGarden && (
                 <div

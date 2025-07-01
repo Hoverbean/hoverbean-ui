@@ -191,13 +191,13 @@ function GardenMetadata() {
     const { name, description, forum, links } = formData
     const { documentation, community } = links
     if (!name) {
-      errors.push('Garden name not provided.')
+      errors.push('HighTable name not provided.')
     }
     if (resolvedAddress) {
-      errors.push('Garden name is already taken')
+      errors.push('HighTable name is already taken')
     }
     if (!description) {
-      errors.push('Garden description not provided.')
+      errors.push('HighTable description not provided.')
     }
     if (forum && !URL_REGEX.test(forum)) {
       errors.push('Forum is not in a valid url format.')
@@ -250,7 +250,7 @@ function GardenMetadata() {
     <div>
       <Header
         title="Add Profile"
-        subtitle="Fill with your garden information"
+        subtitle="Fill with your HighTable information"
       />
       <div
         css={`
@@ -260,7 +260,7 @@ function GardenMetadata() {
           margin-bottom: ${4 * GU}px;
         `}
       >
-        <MetadataField label="GARDEN NAME">
+        <MetadataField label="HIGHTABLE NAME">
           <TextInput
             maxLength="50"
             onChange={handleGardenNameChange}
@@ -268,7 +268,7 @@ function GardenMetadata() {
             css="width: 100%;"
           />
         </MetadataField>
-        <MetadataField label="GARDEN DESCRIPTION">
+        <MetadataField label="HIGHTABLE DESCRIPTION">
           <TextInput
             multiline
             maxLength="120"
@@ -343,7 +343,7 @@ function GardenMetadata() {
                   allowedMIMETypes={['image/jpeg', 'image/png']}
                   file={formData[GARDEN_LOGO]}
                   id="file-uploader-1"
-                  label="GARDEN LOGO"
+                  label="HIGHTABLE LOGO"
                   onDragAccepted={handleOnDragAccepted}
                   onDragRejected={handleOnDragRejected}
                   onFileUpdated={handleOnGardenLogoUpdated}
@@ -359,7 +359,7 @@ function GardenMetadata() {
                   allowedMIMETypes={['image/jpeg', 'image/png']}
                   file={formData[TOKEN_LOGO]}
                   id="file-uploader-2"
-                  label="GARDEN TOKEN ICON"
+                  label="HIGHTABLE TOKEN ICON"
                   onDragAccepted={handleOnDragAccepted}
                   onDragRejected={handleOnDragRejected}
                   onFileUpdated={handleOnTokenLogoUpdated}
@@ -490,7 +490,7 @@ function LinksBox({
           color: ${theme.contentSecondary};
         `}
       >
-        This links will be displayed at the footer of your Garden
+        This links will be displayed at the footer of your HighTable
       </h3>
       <img
         css={`
